@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+    
+        <div class="container">
+            
+            <div id="app">
+                {{ message }}
+                <input v-model="message" class="form-control">
+
+                <ul>
+                    <li v-for="todo in todos">
+                        {{ message }}
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script src="vue.min.js"></script>
+        <script>
+            new Vue({
+                el : '#app',
+                data : {
+                    message : "Hello World",
+                    todos : [1, 2, 3]
+
+                }
+            })
+        </script>
+    </body>
+</html>
